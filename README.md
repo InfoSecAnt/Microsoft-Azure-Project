@@ -1,4 +1,4 @@
-# Failed Logon Attempts
+# Failed RDP Logon Attempts
 
 #### [Medium Blog Step-by-Step Guide](https://anthonymendis.medium.com/fun-siem-project-for-cybersecurity-enthusiasts-be704b47add)
 
