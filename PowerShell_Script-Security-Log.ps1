@@ -109,7 +109,7 @@ while ($true)
                 #Write-Host "Getting Latitude and Longitude from IP Address and writing to log" -ForegroundColor Yellow -BackgroundColor Black
                 Start-Sleep -Seconds 1
 
-                # Make web request to the geolocation API
+                # Make web request to the Geolocation API
                 # For more info: https://ipgeolocation.io/documentation/ip-geolocation-api.html
                 $API_ENDPOINT = "https://api.ipgeolocation.io/ipgeo?apiKey=$($API_KEY)&ip=$($sourceIp)"
                 $response = Invoke-WebRequest -UseBasicParsing -Uri $API_ENDPOINT
