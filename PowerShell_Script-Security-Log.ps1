@@ -17,7 +17,7 @@ $XMLFilter = @'
 <#
     This function creates a bunch of sample log files that will be used to train the
     Extract feature in Log Analytics workspace. If you don't have enough log files to
-    "train" it, it will fail to extract certain fields for some reason -_-.
+    "train" it, it will fail to extract certain fields for some reason.
     We can avoid including these fake records on our map by filtering out all logs with
     a destination host of "samplehost"
 #>
