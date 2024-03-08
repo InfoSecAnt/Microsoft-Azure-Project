@@ -46,7 +46,7 @@ while ($true)
 {
     
     Start-Sleep -Seconds 1
-    # This retrieves events from Windows EVent Viewer based on the filter
+    # This retrieves events from Windows Event Viewer based on the filter
     $events = Get-WinEvent -FilterXml $XMLFilter -ErrorAction SilentlyContinue
     if ($Error) {
         #Write-Host "No Failed Logons found. Re-run script when a login has failed."
@@ -130,7 +130,7 @@ while ($true)
                 Write-Host -BackgroundColor Black -ForegroundColor Magenta "latitude:$($latitude),longitude:$($longitude),destinationhost:$($destinationHost),username:$($username),sourcehost:$($sourceIp),state:$($state_prov),label:$($country) - $($sourceIp),timestamp:$($timestamp)"
             }
             else {
-                # Entry already exists in custom log file. Do nothing, optionally, remove the # from the line below for output
+                # Entry already exists in a custom log file. Do nothing, optionally, remove the # from the line below for output
                 # Write-Host "Event already exists in the custom log. Skipping." -ForegroundColor Gray -BackgroundColor Black
             }
         }
